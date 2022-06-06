@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- Bulma CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <!-- link to css -->
+    <link rel="stylesheet" href="assets/style.css">
+
+    <title>Compare Results</title>
+</head>
+
+<body>
+
+    <div class="result">
+
+        <img src="images/Rideshare.png" alt="ridePicture" class="ride mt-5" style="width: 32rem;">
+        <button class="backButton"> <a href="index.html">Back</a> </button>
+
+        <!-- use Bulma to build up the result card -->
+        <!-- get the API result from uber  -->
+        <div class="card uber-result " style="width: 18rem;margin:20px; border-radius: 25px;">
+            <div class="card-image has-text-centered ">
+                <figure class="image is-inline-block">
+                    <img class="is-3by3 mt-5" src="images/uber.png" alt="uber image" style="width: 8rem;">
+                </figure>
+            </div>
+
+            <div class="content is-medium">
+                <ul>
+                    <li>Destination</li>
+                    <p id="dest-uber"></p>
+                    <li>Price</li>
+                    <p id="price-uber"></p>
+
+                </ul>
+                <div class="card-footer has-text-centered ">
+                    <a href="https://www.uber.com/ca/en/" class="card-link has-text-centered">Uber</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- get the API result from Lyft -->
+        <div class="card  lyft-result " style="width: 18rem;margin:20px;border-radius: 25px;">
+            <div class="card-image has-text-centered ">
+                <figure class="image is-inline-block">
+                    <img class="image is-3by3 mt-5" src="images/lyft.jpeg" alt="lyft image"
+                        style="width: 8rem;border-radius: 25px;">
+                </figure>
+            </div>
+
+            <div class="content is-medium">
+                <ul>
+                    <li>Destination</li>
+                    <p id="dest-lyft"></p>
+                    <li>Price</li>
+                    <p id="price-lyft"></p>
+
+                </ul>
+                <div class="card-footer has-text-centered ">
+                    <a href="https://www.lyft.com/" class="card-link has-text-centered">Lyft</a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <iframe src="https://giphy.com/embed/5bo92jPBIWKtHUump7" width="340" height="480" frameBorder="0"
+            class="giphy-embed" allowFullScreen></iframe>
+        <p><a href="https://giphy.com/gifs/volkswagenmx-vintage-car-5bo92jPBIWKtHUump7">via GIPHY</a></p>
+
+
+
+        <footer class="container-fluid">
+            <p class="text-center"> Copyright© Nathan H, Garrett L, Wingky L</p>
+
+        </footer>
+        <script src="./assets/scripts/result.js"></script>
+</body>
+
+</html>
